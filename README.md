@@ -1,20 +1,9 @@
-# 4 days student links to files on AWS update
-## Up to August 22 these links will be active & the Windows box will reboot every hour
-### NEW files links when Class starts - Attacker
-### NEW files links when Class starts - Victim
-# This github is for 2 different classes: 2-Day Bootcamp = what you must know to pass. 4-Day Bootcamp What you must do to pass.
-## 2-day Knowing = Glossary/notecards, Readings. You can read on your once you understand the depth and focus of the exam.
-## 4-day Doing = Understanding and apply concept in a lab. You can do the activities of Ethical hacking once you know the process and the tools.
+# Lab Setup
+## You will need to be able to install software on your local workstation in order to do labs
+## At a minimumm: Vmware or Virtualbox, you may download vitual images 72 hours before class if you choose not ot build your own.
+### these files will be 4-16 GIGABYTES ( BIG) check your connection)
+### Links to these files will be here
 
-
-## 2021-06-08 - PLEASE NOTE you can get much more if you email ask for an account on my vmlt.com site
-### In the spirit of hacking: You must do some recon and find my email address to get an account.
-### Your message must have
-### a subject line: o'iwantmyCEH
-### a body containing: first,last name, country
-### I resever the right to reject any request for any reason and not tell you the reason.
-
-# CEH-bootcamp 
 ## 2 versions of setup
 ## These only work if you have administrative control over your computer
 ## They will not work on a Tablet or Chromebook
@@ -31,11 +20,6 @@
 ## Way to play along
 ### EASY: open your phone's camera and point at the QRCODE when your instructor shows it on the screen
 ### Use the browser on your phone or opena second desktop  browser and point it at the URL sent in the chat by the producer
-
-# On a per topic basis this course has: 
-##  A. What information you need to know for the CEH v11 exam (knowledge) = readings
-##  B. What you need to be able to do (tasks with tools) = labs
-##  C. What and how a professional does it (skills)
 
 # FILES
 ## They are not perfect, if you have constructive ideas on improvement email me.
