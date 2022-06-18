@@ -8,8 +8,8 @@ They will not work on a Tablet or Chromebook
 ### Build metaspliotable3 https://github.com/rapid7/metasploitable3
 
 
-## You may download instuctor vitual images for metasploitable3 72 hours before class if you choose not to build your own.
-### IMAGES will not be downloadble at class time - They will be specically unlinked due to bandwidth issues.
+## You may download instructor virtual images for metasploitable3 72 hours before class if you choose not to build your own.
+### IMAGES will not be downloadble at class time - They will be specifically unlinked due to bandwidth issues.
 ### These files will be 4-16 GIGABYTES (BIG) check your connection
 ### Links to these files will be here
 
@@ -18,7 +18,7 @@ They will not work on a Tablet or Chromebook
 
 ## Metasploitable3
 
-### follow this: 
+### Follow this: 
 
 # classroom feedback tool FREE use the browser version only
 ## Most O' students have security controls in place that limit access to sites from a computer & all students have a personal mobile device
