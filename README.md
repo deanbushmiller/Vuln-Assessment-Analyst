@@ -1,11 +1,9 @@
-# Lab Setup
 # Penetration Testing Lab Environment Deployment Guide
-
-You will not need to install any software locally to run this lab.
-Open a plaintext editor like notepad or ultra edit
-You will need an AWS account and a creditcard on file with Amazon.
-These resources are updated and changed regularly.
-VERSION: 20220715.1
+	You will not need to install any software locally to run this lab.
+	Open a plaintext editor like notepad or ultra edit
+	You will need an AWS account and a creditcard on file with Amazon.
+	These resources are updated and changed regularly.
+	VERSION: 20220715.1
 
 ## Pre-requisites:
 
@@ -45,15 +43,16 @@ Dean Bushmiller is hosting public AMIs in the us-east-1 region in AWS, which you
 2. In the top navigation, to the right of the search bar, click the "shell" icon that looks like a terminal prompt to launch CloudShell (it will take a few moments to initialize the environment)
 3. Run the following three commands to copy the public AMI's into your account
 
-aws ec2 copy-image --name kali-linux --source-image-id ami-0e0c5931cfadd2102 --source-region us-east-1
+`aws ec2 copy-image --name kali-linux --source-image-id ami-0e0c5931cfadd2102 --source-region us-east-1`
 
-aws ec2 copy-image --name metasploitable3-linux --source-image-id ami-0b186198cc048aa9d --source-region us-east-1
+`aws ec2 copy-image --name metasploitable3-linux --source-image-id ami-0b186198cc048aa9d --source-region us-east-1`
 
-aws ec2 copy-image --name metasploitable3-windows --source-image-id ami-0194bde26e73f72e2 --source-region us-east-1
+`aws ec2 copy-image --name metasploitable3-windows --source-image-id ami-0194bde26e73f72e2 --source-region us-east-1`
 
 Copy the names to text editor
 
 ADVANCED TRICK: you can run all three at once by adding a space && space between them. If you use an editor without line wrap this will BREAK.
+'aws ec2 copy-image --name kali-linux --source-image-id ami-0e0c5931cfadd2102 --source-region us-east-1 && aws ec2 copy-image --name metasploitable3-linux --source-image-id ami-0b186198cc048aa9d --source-region us-east-1 && aws ec2 copy-image --name metasploitable3-windows --source-image-id ami-0194bde26e73f72e2 --source-region us-east-1'
 
 
 **Important: Each command will output an _ImageId_.  YOUR ImageId is NOT typically the orginal ImageId. You need to copy these 3 to a local text file and keep them for the deployment steps below.**
@@ -67,17 +66,19 @@ This solution is provided as a CloudFormation template in YAML format. The templ
 3. Click Create Stack > With New Resources (standard)
 4. Give the stack a name and append today's date, Example 'pentestlab19991231' 
 5. For template source, https://ceh-v11-20220609.s3.amazonaws.com/20220715-LAB-Pentest/pentestlab.yml
+  _This may be turned off until class time_
 6. For step 2 fill in the parameters (see reference below)
-6. For step 3 it is not nessessary to Configure stack options (Next)
-7. For step 4 scroll to bottom: you must CHECK I acknowledge that AWS CloudFormation might create IAM resources.
-8. Create stack
+7. For step 3 it is not nessessary to Configure stack options (Next)
+8. For step 4 scroll to bottom: you must CHECK I acknowledge that AWS CloudFormation might create IAM resources.
+9. Create stack
 
 ### Parameter Reference
 
 - AttackerAMIId: The AMI ID of the attacker image created above
 - LinuxVictimAMIId: The AMI ID of the Linux victim image created above
 - WindowsVictimAMIId: The AMI ID of the Windows victim image created above
-- PublicIpAddress: Your public IP address. This can be acquired by searching https://whatismyipaddress.com/ . Note: this must be an IPv4 address
+- PublicIpAddress: Your public IP address.
+  This can be acquired by searching https://whatismyipaddress.com/ . Note: this must be an IPv4 address
 - SSHKeyPair: An SSH keypair created in the EC2 console for use with this solution.
 
 ### Next Steps
@@ -89,8 +90,6 @@ It will take several minutes for the resources to be created, but once it has co
 - 1 Linux victim instance (10.0.0.10)
 - 1 Windows victim instance (10.0.0.21)
 
-You can also find the public IP of the attacker machine and the private IPs of the victim machines in the Outputs section of the CloudFormation console 
-OR in the EC2 service in the details of each VM.
 
 ### Connecting to attacker using Session Manager
 
@@ -103,7 +102,7 @@ _Tip: The default session is not a full login shell, so running 'bash' once the 
 When you are done using the solution, you will want to tear down the resources you built in order to prevent unwanted costs in your AWS account.
 
 ### You will CONTINUALLY incur charges from AWS if you DO NOT clean up
-Stoping instance will REDUCE charges and allow you to do the lab on your own.
+Stopping instance will REDUCE charges and allow you to do the lab on your own.
 
 2 phases:
 - CloudFormation phase
@@ -120,7 +119,7 @@ To delete the copied AMIs:
 
 At this point, your account is clear of all resources created by this solution.
 
-## advanced versions
+## Advanced versions
 Advanced versions of this lab allow for SSH & RDP connections. 
 Software installation is required to use an SSH client like Putty or RDP client like Royal TSX
 You must support your own setup in this case.
@@ -128,7 +127,7 @@ You must support your own setup in this case.
 # classroom feedback tool FREE use the browser version only
 ## Most O' students have security controls in place that limit access to sites from a computer & all students have a personal mobile device
 ## Test on you mobile device you use for class: www.menti.com
-### Use the browser on your phone or opena second desktop  browser and point it at the URL sent in the chat by the producer
+### Use the browser on your phone or open a second desktop  browser and point it at the URL sent in the chat by the producer
 
 # FILES
 ## They are not perfect, if you have constructive ideas on improvement email me.
