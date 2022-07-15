@@ -52,6 +52,7 @@ Dean Bushmiller is hosting public AMIs in the us-east-1 region in AWS, which you
 Copy the names to text editor
 
 ADVANCED TRICK: you can run all three at once by adding a space && space between them. If you use an editor without line wrap this will BREAK.
+
 `aws ec2 copy-image --name kali-linux --source-image-id ami-0e0c5931cfadd2102 --source-region us-east-1 && aws ec2 copy-image --name metasploitable3-linux --source-image-id ami-0b186198cc048aa9d --source-region us-east-1 && aws ec2 copy-image --name metasploitable3-windows --source-image-id ami-0194bde26e73f72e2 --source-region us-east-1`
 
 
