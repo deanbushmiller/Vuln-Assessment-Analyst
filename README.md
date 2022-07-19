@@ -1,12 +1,12 @@
-# Penetration Testing Lab Environment Deployment Guide
+# Penetration Testing AWS Lab Environment Deployment Guide
 	You will not need to install any software locally to run this lab.
 	Open a plaintext editor like notepad or ultra edit
 	You will need an AWS account and a creditcard on file with Amazon.
 	These resources are updated and changed regularly.
 	VERSION: 20220715.1
 
+
 ## 12 minute video walk-thru of lab setup https://vimeo.com/731196164
-## Pre-requisites:
 
 ### AWS account
 	To build your AWS account consider using a non-work / disposable email adddress and disposable credit card.
@@ -15,14 +15,15 @@
 
 ### Choose a region
 
+	When deploying this solution, you should perform all of the steps in the same AWS region. 
+	In order track costs easily this lab should not be a region where you perform actual business.
+	Run this test first:
+	https://cloudpingtest.com/aws
+		This will determine your closest region.
+		>200 ms is going to slow your lab down.
 
-When deploying this solution, you should perform all of the steps in the same AWS region. In order track costs easily it should not be a region where you perform actual business.
-Run this test first:
-https://cloudpingtest.com/aws
-	This will determine your closest region.
-	>200 ms is going to slow your lab down.
-
-Choose a region close to your geographic location to deploy the solution. In the AWS Console, the region you have selected is shown in the top right.
+* Choose a region close to your geographic location to deploy the solution. 
+* In the AWS Console, the region you have selected is shown in the top right.
 
 ### Create SSH keypair in EC2
 
