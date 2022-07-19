@@ -5,7 +5,7 @@
 	These resources are updated and changed regularly.
 	VERSION: 20220715.1
 
-## 12 minute video wlak-thru https://vimeo.com/731196164
+## If AWS is all new to you 12 minute video walk-thru https://vimeo.com/731196164
 ## Pre-requisites:
 
 ### AWS account
