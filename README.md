@@ -5,7 +5,7 @@
 	These resources are updated and changed regularly.
 	VERSION: 20220715.1
 
-## AWS step-by-step 12 minute video walk-thru of lab setup https://vimeo.com/731196164
+## 12 minute video walk-thru of lab setup https://vimeo.com/731196164
 ## Pre-requisites:
 
 ### AWS account
