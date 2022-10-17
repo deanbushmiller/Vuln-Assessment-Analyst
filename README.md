@@ -6,7 +6,7 @@
 	You only need a browser and the google sheet to do all the activities of Day 1
 	You must do the Day 1 activities for the lab and Day 2 to make sense.
 
-# Lab setup hoemwork
+# Lab setup homework
 ## Penetration Testing AWS Lab Environment Deployment Guide
 	You will not need to install any software locally to run this lab.
 	Open a plaintext editor like notepad or ultra edit
