@@ -1,4 +1,13 @@
-# Penetration Testing AWS Lab Environment Deployment Guide
+# Class agenda & tools
+	Day 1 tools: google sheet & browser / lab setup = homework / Day 2 tools: AWS lab setup
+	This is a 2 day class with 2 hours each day
+	Do NOT do lab setup in class - I will cover setup and the details are below
+## Day 1
+	You only need a browser and the google sheet to do all the activities of Day 1
+	You must do the Day 1 activities for the lab and Day 2 to make sense.
+
+# Lab setup hoemwork
+## Penetration Testing AWS Lab Environment Deployment Guide
 	You will not need to install any software locally to run this lab.
 	Open a plaintext editor like notepad or ultra edit
 	You will need an AWS account and a creditcard on file with Amazon.
@@ -6,7 +15,7 @@
 	VERSION: 20220715.1
 
 
-## 12 minute video walk-thru of lab setup https://vimeo.com/731196164
+### 12 minute video walk-thru of lab setup https://vimeo.com/731196164
 
 ### AWS account
 	To build your AWS account consider using a non-work / disposable email adddress and disposable credit card.
@@ -33,6 +42,7 @@ This is used to create an SSH key pair for connecting to the attacker machine in
 Name your key 'pentestlab' and append today's date, Example 'pentestlab19991231'
 Copy the name to text editor
 Windows users = .ppk
+LIN & MAC = .pem
 The key will automatically download - save it for later use.
 
 ### Copy 1 attacker and 2 victim machine AMIs (total of 3)
