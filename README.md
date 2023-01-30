@@ -7,7 +7,8 @@
 	You must do the Day 1 activities for the lab and Day 2 to make sense.
 
 # Lab setup homework
-## Penetration Testing AWS Lab Environment Deployment Guide
+# Way to build lab 20220909
+# AWS Lab Environment Deployment Guide
 	You will not need to install any software locally to run this lab.
 	Open a plaintext editor like notepad or ultra edit
 	You will need an AWS account and a creditcard on file with Amazon.
@@ -15,7 +16,7 @@
 	VERSION: 20220715.1
 
 
-### 12 minute video walk-thru of lab setup https://vimeo.com/731196164
+## 12 minute video walk-thru of lab setup https://vimeo.com/731196164
 
 ### AWS account
 	To build your AWS account consider using a non-work / disposable email adddress and disposable credit card.
@@ -42,7 +43,6 @@ This is used to create an SSH key pair for connecting to the attacker machine in
 Name your key 'pentestlab' and append today's date, Example 'pentestlab19991231'
 Copy the name to text editor
 Windows users = .ppk
-LIN & MAC = .pem
 The key will automatically download - save it for later use.
 
 ### Copy 1 attacker and 2 victim machine AMIs (total of 3)
@@ -59,16 +59,18 @@ Dean Bushmiller is hosting public AMIs in the us-east-1 region in AWS, which you
 
 `aws ec2 copy-image --name metasploitable3-linux --source-image-id ami-0b186198cc048aa9d --source-region us-east-1`
 
-`aws ec2 copy-image --name metasploitable3-windows --source-image-id ami-0194bde26e73f72e2 --source-region us-east-1`
+`aws ec2 copy-image --name metasploitable3-windows --source-image-id ami-0e3153815a2b50c67 --source-region us-east-1`
 
 Copy the names to text editor
 
-ADVANCED TRICK: you can run all three at once by adding a space && space between them. If you use an editor without line wrap this will BREAK.
+OR ADVANCED TRICK: you can run all three at once by adding a space && space between them. If you use an editor without line wrap this will BREAK.
 
-`aws ec2 copy-image --name kali-linux --source-image-id ami-0e0c5931cfadd2102 --source-region us-east-1 && aws ec2 copy-image --name metasploitable3-linux --source-image-id ami-0b186198cc048aa9d --source-region us-east-1 && aws ec2 copy-image --name metasploitable3-windows --source-image-id ami-0194bde26e73f72e2 --source-region us-east-1`
+> `aws ec2 copy-image --name kali-linux --source-image-id ami-0e0c5931cfadd2102 --source-region us-east-1 && aws ec2 copy-image --name metasploitable3-linux --source-image-id ami-0b186198cc048aa9d --source-region us-east-1 && aws ec2 copy-image --name metasploitable3-windows --source-image-id ami-0e3153815a2b50c67 --source-region us-east-1`
 
 
-**Important: Each command will output an _ImageId_.  YOUR ImageId is NOT typically the orginal ImageId. You need to copy these 3 to a local text file and keep them for the deployment steps below.**
+**Important: Each command will output an _ImageId_.  YOUR ImageId is NOT the orginal ImageId. You need to copy these 3  NAMES to a local text file and keep them for the deployment steps below.**
+
+** You must wait 10 minutes for images to complete copy before next step **
 
 ## Deployment Guide:
 
@@ -102,10 +104,59 @@ It will take several minutes for the resources to be created, but once it has co
 - 1 Kali Linux attacker instance (Public IP: generated on launch, Private IP: 10.0.0.4)
 - 1 Linux victim instance (10.0.0.10)
 - 1 Windows victim instance (10.0.0.21)
+- 1 Guacamole HTML5 console (10.0.0.5)
 
 
-### Connecting to attacker using Session Manager
+### Connecting to attacker 
+#### New way use Apache Guacamole
+- https://guacamole.apache.org/
+- Clientless remote desktop gateway. It supports standard protocols like VNC, RDP, and SSH.There are no plugins or client software required.
+- You need to build connections: we do this in class.
+- Because the AWS firewall rules limit access to Guacamole to your IP address only and this is a non-production lab it is reasonable to put the username and passwords in this document. Change the rules = no security = bad idea.
+- Do not use these credentails below in any attack. Only use them for configuration.
+- One security issue: you must accept browser "Certificate is not valid" This is resonable in non-production enviroment. You local security policy may not allow exception so you may noeed to do this on a personal asset.
+- Please watch the video on configuration https://vimeo.com/767687771
+##### Connection Credentials
+If it is not specified here - skip it
+* 1st connection (required)
+	* Name: kali
+	* Protocol: RDP
+	* Max Connections: 1
+	* Max Connections: 1
+	* Skip down to: PARAMETERS | Network
+	* Hostname: 10.0.0.4
+	* Port: 3390
+	* Authentication
+	* Username: kali
+	* Password: kali
 
+* 2nd connection (Optional)
+	* Name: VIC-NIX
+	* Protocol: SSH
+	* Max Connections: 1
+	* Max Connections: 1
+	* Skip down to: PARAMETERS | Network
+	* Hostname: 10.0.0.10
+	* Port: 22
+	* Authentication
+	* Username: vagrant
+	* Password: vagrant
+
+* 3rd connection (Optional)
+	* Name: VIC-WIN
+	* Protocol: RDP
+	* Max Connections: 1
+	* Max Connections: 1
+	* Skip down to: PARAMETERS | Network
+	* Hostname: 10.0.0.21
+	* Port: 3389
+	* Authentication
+	* Username: vagrant
+	* Password: vagrant
+	* Security mode: RDP encryption
+
+
+#### OLD way using Session Manager
 Once the stack is built, you can connect directly in your browser using AWS Session Manager. 
 Follow the steps [here](https://docs.aws.amazon.com/systems-manager/latest/userguide/session-manager-working-with-sessions-start.html#start-ec2-console) in the EC2 Console to connect.
 
