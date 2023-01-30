@@ -7,7 +7,7 @@
 	You must do the Day 1 activities for the lab and Day 2 to make sense.
 
 # Lab setup homework
-# Way to build lab 20220909
+# Way to build lab 20230130
 # AWS Lab Environment Deployment Guide
 	You will not need to install any software locally to run this lab.
 	Open a plaintext editor like notepad or ultra edit
