@@ -37,7 +37,7 @@ The key will automatically download
 2. Search for CloudFormation in service
 3. Click Create Stack > With New Resources (standard)
 4. Give the stack same name as your SSH key, Example 'lab20240430' 
-5. For template source, https://20240311-drb-ctf.s3.amazonaws.com/CAP-flag-v4.yml
+5. For template source, https://20240311-drb-ctf.s3.amazonaws.com/CAP-flag-v5.yml
    _This may be turned off until class time_
 6. Fill in the parameters
 - PublicIpAddress: Your public IPv4 address.
