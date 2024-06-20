@@ -1,0 +1,45 @@
+﻿Level	Date and Time	Source	Event ID	Task Category
+Information	9/3/2022 10:53:54 AM	Microsoft-Windows-ServerManager	1610	None	"Installation succeeded. 
+
+Roles:
+
+Remote Desktop Services
+   The following role services were installed:
+   Remote Desktop Licensing
+   Warning: Ensure that your RD Session Host servers are correctly configured to use this license server. For more information, see <a href=""ts_license.chm::/html/7cd57119-808e-4777-ab21-1f75a718c1ad.htm"">Configure License Settings on an RD Session Host Server.</a>
+
+"
+Information	9/3/2022 10:53:42 AM	Microsoft-Windows-Servicing	9	None	Selectable update Licensing of package LicensingRole was successfully turned on.
+Information	9/3/2022 10:53:42 AM	Microsoft-Windows-Servicing	9	None	Selectable update Licensing-UI of package LicensingRole was successfully turned on.
+Information	9/3/2022 10:53:41 AM	Microsoft-Windows-Servicing	7	None	Initiating changes to turn on update Licensing of package LicensingRole. Client id: RMT.
+Information	9/3/2022 10:53:41 AM	Microsoft-Windows-Servicing	7	None	Initiating changes to turn on update Licensing-UI of package LicensingRole. Client id: RMT.
+Information	6/20/2021 1:43:14 PM	Microsoft-Windows-WUSA	2	None	"Windows update ""Update for Windows (KB2999226)"" was successfully installed. (Command line: """"C:\Windows\SysNative\wusa.exe"" ""C:\ProgramData\Package Cache\54050A5F8AE7F0C56E553F0090146C17A1D2BF8D\packages\Patch\x64\Windows6.1-KB2999226-x64.msu"" /quiet /norestart"")"
+Information	6/20/2021 1:43:14 PM	Microsoft-Windows-Servicing	2	None	Package KB2999226 was successfully changed to the Installed state.
+Information	6/20/2021 1:43:13 PM	Microsoft-Windows-Servicing	1	None	Initiating changes for package KB2999226. Current state is Absent. Target state is Installed. Client id: WindowsUpdateAgent.
+Information	5/2/2021 3:06:28 AM	Microsoft-Windows-Servicing	9	None	Selectable update SNMP of package SNMP-Package was successfully turned on.
+Information	5/2/2021 3:06:24 AM	Microsoft-Windows-Servicing	7	None	Initiating changes to turn on update SNMP of package SNMP-Package. Client id: DISM Package Manager Provider.
+Information	5/2/2021 3:06:20 AM	Microsoft-Windows-Servicing	9	None	Selectable update IIS-FTPExtensibility of package IIS-WebServer-AddOn-Package was successfully turned on.
+Information	5/2/2021 3:06:20 AM	Microsoft-Windows-Servicing	9	None	Selectable update IIS-FTPSvc of package IIS-WebServer-AddOn-Package was successfully turned on.
+Information	5/2/2021 3:06:20 AM	Microsoft-Windows-Servicing	9	None	Selectable update IIS-ServerSideIncludes of package IIS-WebServer-AddOn-Package was successfully turned on.
+Information	5/2/2021 3:06:20 AM	Microsoft-Windows-Servicing	9	None	Selectable update IIS-ISAPIFilter of package IIS-WebServer-AddOn-Package was successfully turned on.
+Information	5/2/2021 3:06:20 AM	Microsoft-Windows-Servicing	9	None	Selectable update IIS-ISAPIExtensions of package IIS-WebServer-AddOn-Package was successfully turned on.
+Information	5/2/2021 3:06:20 AM	Microsoft-Windows-Servicing	9	None	Selectable update IIS-CGI of package IIS-WebServer-AddOn-Package was successfully turned on.
+Information	5/2/2021 3:06:20 AM	Microsoft-Windows-Servicing	9	None	Selectable update IIS-ASP of package IIS-WebServer-AddOn-Package was successfully turned on.
+Information	5/2/2021 3:06:20 AM	Microsoft-Windows-Servicing	9	None	Selectable update IIS-ASPNET of package IIS-WebServer-AddOn-Package was successfully turned on.
+Information	5/2/2021 3:06:20 AM	Microsoft-Windows-Servicing	9	None	Selectable update IIS-NetFxExtensibility of package IIS-WebServer-Package was successfully turned on.
+Information	5/2/2021 3:05:54 AM	Microsoft-Windows-Servicing	7	None	Initiating changes to turn on update IIS-FTPExtensibility of package IIS-WebServer-AddOn-Package. Client id: DISM Package Manager Provider.
+Information	5/2/2021 3:05:54 AM	Microsoft-Windows-Servicing	7	None	Initiating changes to turn on update IIS-FTPSvc of package IIS-WebServer-AddOn-Package. Client id: DISM Package Manager Provider.
+Information	5/2/2021 3:05:54 AM	Microsoft-Windows-Servicing	7	None	Initiating changes to turn on update IIS-FTPServer of package IIS-WebServer-AddOn-Package. Client id: DISM Package Manager Provider.
+Information	5/2/2021 3:05:54 AM	Microsoft-Windows-Servicing	7	None	Initiating changes to turn on update IIS-ServerSideIncludes of package IIS-WebServer-AddOn-Package. Client id: DISM Package Manager Provider.
+Information	5/2/2021 3:05:54 AM	Microsoft-Windows-Servicing	7	None	Initiating changes to turn on update IIS-ISAPIFilter of package IIS-WebServer-AddOn-Package. Client id: DISM Package Manager Provider.
+Information	5/2/2021 3:05:54 AM	Microsoft-Windows-Servicing	7	None	Initiating changes to turn on update IIS-ISAPIExtensions of package IIS-WebServer-AddOn-Package. Client id: DISM Package Manager Provider.
+Information	5/2/2021 3:05:54 AM	Microsoft-Windows-Servicing	7	None	Initiating changes to turn on update IIS-CGI of package IIS-WebServer-AddOn-Package. Client id: DISM Package Manager Provider.
+Information	5/2/2021 3:05:54 AM	Microsoft-Windows-Servicing	7	None	Initiating changes to turn on update IIS-ASP of package IIS-WebServer-AddOn-Package. Client id: DISM Package Manager Provider.
+Information	5/2/2021 3:05:54 AM	Microsoft-Windows-Servicing	7	None	Initiating changes to turn on update IIS-ASPNET of package IIS-WebServer-AddOn-Package. Client id: DISM Package Manager Provider.
+Information	5/2/2021 3:05:54 AM	Microsoft-Windows-Servicing	7	None	Initiating changes to turn on update IIS-NetFxExtensibility of package IIS-WebServer-Package. Client id: DISM Package Manager Provider.
+Information	5/2/2021 3:05:54 AM	Microsoft-Windows-Servicing	7	None	Initiating changes to turn on update IIS-WebServerRole of package IIS-WebServer-Package. Client id: DISM Package Manager Provider.
+Information	5/2/2021 3:02:54 AM	Microsoft-Windows-Servicing	2	None	Package KB3134760 was successfully changed to the Installed state.
+Information	5/2/2021 3:01:44 AM	Microsoft-Windows-WUSA	2	None	"Windows update ""Update for Windows (KB3134760)"" was successfully installed. (Command line: """"C:\Windows\system32\wusa.exe"" C:\Windows\Temp\wmf.msu /quiet /norestart "")"
+Warning	5/2/2021 3:01:44 AM	Microsoft-Windows-WUSA	4	None	"Windows update Update for Windows (KB3134760) requires a computer restart to complete the installation. (Command line: """"C:\Windows\system32\wusa.exe"" C:\Windows\Temp\wmf.msu /quiet /norestart "")"
+Information	5/2/2021 3:01:43 AM	Microsoft-Windows-Servicing	4	None	A reboot is necessary before package KB3134760 can be changed to the Installed state.
+Information	5/2/2021 3:01:13 AM	Microsoft-Windows-Servicing	1	None	Initiating changes for package KB3134760. Current state is Absent. Target state is Installed. Client id: WindowsUpdateAgent.
